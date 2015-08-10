@@ -12,6 +12,15 @@ def timer(total_ticks):
 def buzz():
     print("TODO: ... buzzzzz")
 
-timer(15)
-buzz()
+from pygame.locals import *
+import pygame
+
+def game():
+    screen = pygame.display.set_mode((1024, 768), DOUBLEBUF)
+    car = pygame.image.load('car.png')
+    screen.blit(car, (50, 100))
+    pygame.display.flip()
+    timer(15)
+
+game()
 

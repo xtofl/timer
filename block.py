@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from time import sleep
 
 def timer(total_ticks):
